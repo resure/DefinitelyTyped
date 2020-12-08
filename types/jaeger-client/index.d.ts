@@ -70,8 +70,6 @@ export interface TracingConfig {
     disable?: boolean;
     sampler?: SamplerConfig;
     reporter?: ReporterConfig;
-    traceId128bit?: boolean;
-    shareRpcSpan?: boolean;
 }
 
 export interface TracingOptions {
@@ -79,6 +77,8 @@ export interface TracingOptions {
     metrics?: PrometheusMetricsFactory;
     logger?: Logger;
     tags?: any;
+    traceId128bit?: boolean;
+    shareRpcSpan?: boolean;
 }
 
 export interface Injector {
